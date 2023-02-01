@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
+import {PORT} from './config.js'
 
 const app = express();
 app.use(cors({
     origin: '*'
 }));
-const PORT = 5000;
 
 let clientes = [
     {nombre: "JazzTel", cif: "A12345678", direccion: "Gran Vía, 22", localidad: "Barcelona"},
