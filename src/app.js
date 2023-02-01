@@ -11,6 +11,7 @@ let clientes = [
     {nombre: "JazzTel", cif: "A12345678", direccion: "Gran Vía, 22", localidad: "Barcelona"},
     {nombre: "Orange", cif: "A87654321", direccion: "Príncipe Pío, 40", localidad: "Bilbao"},
     {nombre: "Movistar", cif: "A44445555", direccion: "Castellana, 100", localidad: "Madrid"},
+    {nombre: "Konecta", cif: "A88882222", direccion: "Macul, 641", localidad: "Santiago"},
 ]
 
 app.use(express.json());
