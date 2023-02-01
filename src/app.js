@@ -1,11 +1,11 @@
-const express = require('express');
-const dotenv = require('dotenv');
-dotenv.config();
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 
 const app = express();
-app.use(cors());
-const PORT = process.env.PORT;
+app.use(cors({
+    origin: '*'
+}));
+const PORT = 5000;
 
 let clientes = [
     {nombre: "JazzTel", cif: "A12345678", direccion: "Gran Vía, 22", localidad: "Barcelona"},
